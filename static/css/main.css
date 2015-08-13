@@ -1,0 +1,54 @@
+.footer {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.logo img {
+  display: block;
+  margin: 16px auto 0;
+  width: 100px;
+  height: 77px;
+}
+
+.page-content {
+  padding: 16px;
+}
+
+.fieldgroup-amount {
+  width: 100%;
+}
+
+.fieldgroup-amount input {
+  font-size: 1.5em;
+}
+
+.button-register button {
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.transaction-card {
+  width: 100%;
+}
+
+#transaction-progress-bar {
+  width: 100%;
+}
+
+#transaction-status {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.INITIALIZED, .PENDING {
+  color: #BBBF36;
+}
+
+.DECLINED, .ABORTED, .ERROR {
+  color: #C24848;
+}
+
+.APPROVED {
+  color: #21801C;
+}

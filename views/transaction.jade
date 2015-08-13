@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  .transaction-card.mdl-card.mdl-shadow--4dp
+    .demo-card-title.mdl-card__title.mdl-card--expand
+      .mdl-typography--title Transaction data
+    .mdl-card__supporting-text
+      span(class="#{transaction.status}")#transaction-status=transaction.status
+      dl
+        dt.mdl-typography--body-2 Identifier
+        dd.mdl-typography--body-1#transaction-identifier=transaction.identifier
+        dt.mdl-typography--body-2 Amount
+        dd.mdl-typography--body-1#transaction-amount=transaction.amount
+        dt.mdl-typography--body-2 Type
+        dd.mdl-typography--body-1#transaction-type= transaction.type
+    .mdl-card__actions.mdl-card--border
+      a.mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect#transaction-start-link(href=transaction.startLink) Start Transaction
+      #transaction-progress-bar.mdl-progress.mdl-js-progress.mdl-progress__indeterminate

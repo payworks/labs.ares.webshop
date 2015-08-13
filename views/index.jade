@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  .logo
+    img(src="img/pa_logo.png", alt="logo")
+  form(method="post", action="/transactions" )
+    div
+      .fieldgroup-amount.mdl-textfield.mdl-js-textfield
+          input.mdl-textfield__input(type="number", step="0.01", min="1", name="amount", required)
+          label.mdl-textfield__label(for="amount") Enter amount
+
+      .button-register
+        button.mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect.mdl-button--accent(type="submit") Register transaction
+        
+        
+block footer
+  .footer
+    .mdl-typography--body-1 Use the app to complete the transaction!
+    a.mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect(href="files/ProjectAres.apk") Download the app

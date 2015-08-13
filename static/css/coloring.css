@@ -1,0 +1,11 @@
+body {
+  background-color: #f6f6f6;
+}
+
+.mdl-layout__header {
+  background-color: #25A0DB;
+}
+
+.mdl-button--accent.mdl-button--accent.mdl-button--raised, .mdl-button--accent.mdl-button--accent.mdl-button--fab {
+  background-color: #f7f967;
+}

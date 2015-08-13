@@ -1,0 +1,39 @@
+{
+    "compilerOptions": {
+        "declaration": false,
+        "module": "commonjs",
+        "removeComments": true,
+        "sourceMap": false,
+        "target": "es5",
+        "noImplicitAny": true
+    },
+    "compileOnSave": true,
+    "filesGlob": [
+        "*.ts",
+        "./routes/**/*.ts",
+        "./services/**/*.ts",
+        "./models/**/*.ts",
+        "./static/js/**/*.ts",
+        "./typings/tsd.d.ts",
+        "!./node_modules/**/*.ts"
+    ],
+    "files": [
+        "app.ts",
+        "server.ts",
+        "./routes/index.ts",
+        "./routes/transactions.ts",
+        "./services/api/payworks-api-connected.ts",
+        "./services/api/payworks-api-mock.ts",
+        "./services/api/payworks-api.ts",
+        "./services/conversion-helper.ts",
+        "./services/link-generator.ts",
+        "./services/presentation-helper.ts",
+        "./services/services.ts",
+        "./services/transaction-dao-map.ts",
+        "./services/transaction-dao.ts",
+        "./services/transaction-stream.ts",
+        "./models/transaction.ts",
+        "./static/js/local-storage.ts",
+        "./typings/tsd.d.ts"
+    ]
+}

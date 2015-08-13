@@ -1,0 +1,9 @@
+node_modules
+logs
+*.log
+docker.zip
+.elasticbeanstalk/
+Dockerfile
+deploy.sh
+README.internal.md
+.gitignore.opensource
